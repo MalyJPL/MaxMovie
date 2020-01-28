@@ -5,10 +5,9 @@ h1,
 h2,
 h4 {
   text-align: center;
-  color: #d4af37;
 }
 .row {
-  border: 2px solid #d4af37;
+  border: 2px groove #000000;
 }
 .imagenes {
   width: 100%;
@@ -16,11 +15,8 @@ h4 {
   border-radius: 50%;
 }
 .imagenes:hover {
-  border: 2px groove #d4af37;
+  border: 5px groove #d4af37;
 }
-.borde {
+/* .borde {
   border: solid 1px black;
-}
-body {
-  background-color: black;
-}
+} */
