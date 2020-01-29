@@ -4,7 +4,7 @@ body {
   
 .carousel {
     display: block;  
- margin: auto;
+ margin: 0 auto;
   }
 
 p{color: dimgray;
@@ -19,6 +19,6 @@ h1 {
   color: darkgoldenrod;
 }
 
-h3 {text-align: justify;
+h4 {text-align: justify;
 
 }
