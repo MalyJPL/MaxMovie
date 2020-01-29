@@ -20,13 +20,24 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+        <div class="collapse navbar-collapse class="nav-item active"" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ">
                 <li class="nav-item active">
                     <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
                 </li>
-                <a class="nav-link" href="estrenos.html">Próximos Estrenos</a>
-              </li>
+                <!-- <li class="nav-item active">
+                  <a class="nav-link" href="estrenos.html">Próximos Estrenos</a>
+                </li> -->
+                <li class="nav-item  acive dropdown">
+                  <a class="nav-link dropdown-toggle" href="estrenos.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Próximos Estrenos
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Infantil</a>
+                    <a class="dropdown-item" href="#">Acción</a>
+                    <a class="dropdown-item" href="#">Terror</a>
+                  </div>
+                </li>         
                 <li class="nav-item">
                     <a class="nav-link" href="cartelera.html">Cartelera</a>
                 </li>
