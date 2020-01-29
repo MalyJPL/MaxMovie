@@ -22,3 +22,24 @@ h1 {
 h4 {text-align: justify;
 
 }
+
+.trailer {margin-left: 10px;
+ font-weight: bold;
+ 
+
+}
+
+.botont {
+  font-weight: bold;
+
+}
+
+.botont:hover {background-color: #C2660B;
+  font-weight: bold;
+
+}
+
+.container {text-align: center;
+  background-color: whitesmoke;
+
+}
