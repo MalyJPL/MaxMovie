@@ -13,6 +13,41 @@
 </head>
 
 <body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:  #d4af37;">
+    <a class="navbar-brand" href="#"><img width="300px" src="img/logo mAX.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cartelera.html">Cartelera</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="teatros.html">Teatros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="confiteria.html">Confitería</a>
+        </li>
+        <div class="nav-item">
+          <a class="nav-item nav-link" href="#" id="iniciar-Sesion" onclick=iniciarSesion()>Iniciar Sesión</a>
+        </div>
+        <li class="nav-item">
+          <b class="nav-link" id="usuario"></b>
+        </li>
+
+        <div class="nav-item">
+          <a class="nav-item nav-link" style="display:none" id="cerrarSesion" href="#" onclick=cerrarSesion()>Cerrar
+            Sesión</a>
+        </div>
+    </div>
+  </nav>
+
 
   <!-- ACÁ VA EL NAVEGADOR  -->
 
@@ -36,7 +71,7 @@
           <img src="img/dolittle19nov2019.jpg" alt="Avatar" class="image" style="width:100%">
           <div class="middle">
             <a href="https://www.youtube.com/embed/FEf412bSPLs" target="_blank"
-              onclick="window.open(this.href, this.target, 'width=300,height=400'); return false;">
+              onclick="window.open(this.href, this.target, 'width=300,height=400'); return false;" style="text-decoration: none;">
               <div class="text"> Ver Trailer</div>
             </a>
           </div>
@@ -46,8 +81,8 @@
         <div class="cartelera">
           <img src="img/badboys1dic2019.jpg" alt="Avatar" class="image" style="width:100%">
           <div class="middle">
-            <a href="https://www.youtube.com/embed/FEf412bSPLs" target="_blank"
-              onclick="window.open(this.href, this.target, 'width=300,height=400'); return false;">
+            <a href="img/bad-boys-2-official-trailer.mp4" target="_blank"
+              onclick="window.open(this.href, this.target, 'width=300,height=400'); return false;" style="text-decoration: none;">
               <div class="text"> Ver Trailer</div>
             </a>
           </div>
@@ -57,8 +92,8 @@
           <div class="cartelera">
             <img src="img/contraloimposible.jpg" alt="Avatar" class="image" style="width:100%">
             <div class="middle">
-              <a href="https://www.youtube.com/embed/FEf412bSPLs" target="_blank"
-                onclick="window.open(this.href, this.target, 'width=300,height=400'); return false;">
+              <a href="https://youtu.be/MpkLQg38aaY?t=25" target="_blank"
+                onclick="window.open(this.href, this.target, 'width=300,height=400'); return false;" style="text-decoration: none;">
                 <div class="text"> Ver Trailer</div>
               </a>
             </div>
@@ -69,7 +104,7 @@
             <img src="img/elescandalo17enero2020.jpg" alt="Avatar" class="image" style="width:100%">
             <div class="middle">
               <a href="https://www.youtube.com/embed/FEf412bSPLs" target="_blank"
-                onclick="window.open(this.href, this.target, 'width=300,height=400'); return false;">
+                onclick="window.open(this.href, this.target, 'width=300,height=400'); return false;" style="text-decoration: none;">
                 <div class="text"> Ver Trailer</div>
               </a>
             </div>
@@ -96,7 +131,7 @@
             <img src="img/frozan223oct2019.png" alt="Avatar" class="image" style="width:100%">
             <div class="middle">
               <a href="https://www.youtube.com/embed/FEf412bSPLs" target="_blank"
-                onclick="window.open(this.href, this.target, 'width=300,height=400'); return false;">
+                onclick="window.open(this.href, this.target, 'width=300,height=400'); return false;" style="text-decoration: none;">
                 <div class="text"> Ver Trailer</div>
               </a>
             </div>
@@ -107,7 +142,7 @@
             <img src="img/judy20nov2019.png" alt="Avatar" class="image" style="width:100%">
             <div class="middle">
               <a href="https://www.youtube.com/embed/FEf412bSPLs" target="_blank"
-                onclick="window.open(this.href, this.target, 'width=300,height=400'); return false;">
+                onclick="window.open(this.href, this.target, 'width=300,height=400'); return false;" style="text-decoration: none;">
                 <div class="text"> Ver Trailer</div>
               </a>
             </div>
@@ -118,7 +153,7 @@
             <img src="img/jumanji19nov2019.jpg" alt="Avatar" class="image" style="width:100%">
             <div class="middle">
               <a href="https://www.youtube.com/embed/FEf412bSPLs" target="_blank"
-                onclick="window.open(this.href, this.target, 'width=300,height=400'); return false;">
+                onclick="window.open(this.href, this.target, 'width=300,height=400'); return false;" style="text-decoration: none;">
                 <div class="text"> Ver Trailer</div>
               </a>
             </div>
@@ -129,7 +164,7 @@
             <img src="img/parasito23enero2020.jpg" alt="Avatar" class="image" style="width:100%">
             <div class="middle">
               <a href="videos/Parásitos Tráiler.mp4" target="_blank"
-                onclick="window.open(this.href, this.target, 'width=300,height=400'); return false;">
+                onclick="window.open(this.href, this.target, 'width=300,height=400'); return false;" style="text-decoration: none;">
                 <div class="text"> Ver Trailer</div>
               </a>
             </div>

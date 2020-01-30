@@ -1,0 +1,59 @@
+body {
+    background-color: whitesmoke;
+  }
+  
+.carousel {
+    display: block;  
+ margin: 0 auto;
+  }
+
+p{color: dimgray;
+  text-align: center;
+
+}
+
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  color: darkgoldenrod;
+}
+
+h4 {text-align: justify;
+
+}
+<<<<<<< HEAD
+
+.trailer {margin-left: 10px;
+ font-weight: bold;
+ 
+
+}
+
+.botont {
+  font-weight: bold;
+
+}
+
+.botont:hover {background-color: #C2660B;
+  font-weight: bold;
+
+}
+
+.container {text-align: center;
+  background-color: whitesmoke;
+
+}
+
+h1:hover{
+  color: rgb(117, 89, 17) ;
+}
+
+.navegador{
+  background-color:  #d4af37;
+}
+
+.menu{
+  color:rgb(10, 9, 9);
+  font-size: 30px;
+}

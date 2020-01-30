@@ -1,59 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
-
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <title>Inicio</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:  #d4af37;">
-      <a class="navbar-brand" href="#"><img width="150px" src="img/logo mAX.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse class="nav-item active"" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto ">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="estrenos.html">Próximos Estrenos</a>
-                </li>
-                
-                </li>         
-                <li class="nav-item">
-                    <a class="nav-link" href="cartelera.html">Cartelera</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="teatros.html">Teatros</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="confiteria.html">Confitería</a>
-              </li>
-                <div class="nav-item">
-                    <a class="nav-item nav-link" href="#" id="iniciar-Sesion" onclick=iniciarSesion()>Iniciar Sesión</a>
-                </div>
-                <li class="nav-item">
-                    <b class="nav-link" id="usuario"></b>
-                </li>
-                
-                <div class="nav-item">
-                    <a class="nav-item nav-link" style="display:none" id="cerrarSesion" href="#" onclick=cerrarSesion()>Cerrar Sesión</a>
-                </div>
-
-=======
->>>>>>> 03457ac928fbbb66b3dbb0e871023b9c832ac8b0
 
 <head>
   <meta charset="UTF-8" />
@@ -62,12 +8,12 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <title>MAX MOVIE</title>
-  <link rel="stylesheet" href="maxmovie.css">
+  <link rel="stylesheet" href="css/maxmovie.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:  #d4af37;">
-    <a class="navbar-brand" href="#"><img width="250px" src="img/logo mAX.png" alt=""></a>
+  <nav class="navbar navbar-expand-lg navbar-light navegador">
+    <a class="navbar-brand" href="#"><img width="300px" src="img/logo mAX.png" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -76,28 +22,39 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+          <a class="nav-link menu" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item  acive dropdown">
+          <a class="nav-link dropdown-toggle menu" href="estrenos.html" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Próximos Estrenos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="estrenos#infantilPag">Infantil</a>
+            <a class="dropdown-item" href="estrenos#accionPag">Acción</a>
+            <a class="dropdown-item" href="estrenos#terrorPag">Terror</a>
+          </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="cartelera.html">Cartelera</a>
+          <a class="nav-link menu" href="cartelera.html">Cartelera</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="teatros.html">Teatros</a>
+          <a class="nav-link menu" href="teatros.html">Teatros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="confiteria.html">Confitería</a>
+          <a class="nav-link menu" href="confiteria.html">Confitería</a>
         </li>
+        <span class="navbar-text">
         <div class="nav-item">
-          <a class="nav-item nav-link" href="#" id="iniciar-Sesion" onclick=iniciarSesion()>Iniciar Sesión</a>
+          <a class="nav-item nav-link menu" href="#" id="iniciar-Sesion" onclick=iniciarSesion()>Iniciar Sesión</a>
         </div>
         <li class="nav-item">
-          <b class="nav-link" id="usuario"></b>
+          <b class="nav-link menu" id="usuario"></b>
         </li>
-
-        <div class="nav-item">
-          <a class="nav-item nav-link" style="display:none" id="cerrarSesion" href="#" onclick=cerrarSesion()>Cerrar
+        <li class="nav-item">
+          <a class="nav-item nav-link menu" style="display:none" id="cerrarSesion" href="#" onclick=cerrarSesion()>Cerrar
             Sesión</a>
-        </div>
+        </li>
     </div>
   </nav>
 
@@ -108,7 +65,7 @@
 
   <!---  PRIMER CARRUSEL = CARTELERA--->
   <div class="alert alert-warning" role="alert">
-    <a style="text-decoration: none;" href="cartelera.html">
+    <a style="text-decoration: none;" href="cartelera.html" target="blank">
       <h1> CARTELERA SEMANAL</h1>
     </a>
   </div>
@@ -178,7 +135,7 @@
 
   <div class="container">
     <div class="alert alert-warning" role="alert">
-      <a style="text-decoration: none;"  href="estrenos.html">
+      <a style="text-decoration: none;"  href="estrenos.html" target="blank">
         <h1> PROXIMOS ESTRENOS - PREVENTA</h1>
       </a>
     </div>
@@ -197,10 +154,6 @@
 
 
 
-
-
-
-
   <br><br>
 
 
@@ -208,7 +161,7 @@
 
   <!---SEGUNDO CARRUSEL = CONFITERIA, VARIOS-->
   <div class="alert alert-warning" role="alert">
-    <a style="text-decoration: none;" href="confiteria.html">
+    <a style="text-decoration: none;" href="confiteria.html"target="blank">
       <h1> PARA QUE TE ANTOJES!!</h1>
     </a>
   </div>
@@ -221,6 +174,7 @@
       <div class="carousel-item active">
         <div class="container">
           <div class="row">
+
             <div class="col">
               <img style="display: block; margin: auto;" src="img/confiteria 1.jpg" class="d-block" alt="...">
             </div>
@@ -280,13 +234,6 @@
     <br>
     <br>
 
-
-
-
-
-
-
-
     <footer>
       <div class="container">
         <div class="row">
@@ -321,21 +268,6 @@
               </div>
             </div>
           </div>
-<<<<<<< HEAD
-=======
-          <div class="col">
-            <div class="card" style="width: 10rem;">
-              <img src="img/disponible app store.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title"></h5>
-                <p class="card-text">Moviemax.col</p>
-                <a href="#" class="btn btn-primary">DESCARGA LA APP</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
->>>>>>> 68d1c7f0e4f8b499a6defd37f39daf269f6c6bbb
 
           <div class="col">
             <div class="card" style="width: 10rem;">
@@ -361,14 +293,6 @@
         </div>
       </div>
     </footer>
-
-
-
-
-
-
-
-
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
