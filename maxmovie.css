@@ -43,3 +43,11 @@ h4 {
 h1:hover {
   color: rgb(117, 89, 17);
 }
+
+#bodyEstreno{
+  background-color: black;
+}
+
+.h2Estreno{
+  color: white;
+}
