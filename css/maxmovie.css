@@ -58,4 +58,15 @@ h1:hover{
 h1:hover {
   color: rgb(117, 89, 17);
 }
+<<<<<<< HEAD:css/maxmovie.css
 >>>>>>> 42e1dd601527504a4324b3724578a002c4a0e15e:maxmovie.css
+=======
+
+#bodyEstreno{
+  background-color: black;
+}
+
+.h2Estreno{
+  color: white;
+}
+>>>>>>> d75f14fcefa7b37a664cf22d8b3bf7ffd0d26e92:maxmovie.css
