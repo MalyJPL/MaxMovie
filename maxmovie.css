@@ -1,11 +1,11 @@
 body {
-  background-color: whitesmoke;
-}
+    background-color: whitesmoke;
+  }
 
 .carousel {
-  display: block;
-  margin: 0 auto;
-}
+    display: block;  
+ margin: 0 auto;
+  }
 
 p {
   color: dimgray;
@@ -24,7 +24,7 @@ h4 {
 
 .trailer {
   margin-left: 10px;
-  font-weight: bold;
+ font-weight: bold;
 }
 
 .botont {
@@ -32,7 +32,7 @@ h4 {
 }
 
 .botont:hover {
-  background-color: #c2660b;
+  background-color: #C2660B;
   font-weight: bold;
 }
 
@@ -40,6 +40,38 @@ h4 {
   text-align: center;
   background-color: whitesmoke;
 }
-h1:hover {
-  color: rgb(117, 89, 17);
+
+h1:hover{
+  color: rgb(117, 89, 17) ;
+}
+
+.logos {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+}
+
+.logo_play {
+  width: 90%;
+  height: 70%;
+  margin: auto;
+}
+
+.logo_app {
+  width: 85%;
+  height: 55%;
+  margin: auto;
+}
+
+
+footer {
+  background-color: grey;
+}
+
+.bt_negrilla {
+  font-weight: bold;
+}
+
+.modal_fondo {background-color: hotpink;
+
 }
