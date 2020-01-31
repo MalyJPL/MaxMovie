@@ -77,10 +77,9 @@ footer {
 
 .navegador {
   background-color: #d4af37;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  font-size: 22px;
 }
 
-.menu {
-  color: rgb(10, 9, 9);
-  font-size: 30px;
-  padding: 10%;
-}

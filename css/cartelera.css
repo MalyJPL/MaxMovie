@@ -1,7 +1,10 @@
 
 h3{
- text-align: center;
-}
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: darkgoldenrod;
+  }
 
 .cartelera {
   position: relative;
@@ -41,4 +44,23 @@ h3{
   color: white;
   font-size: 16px;
   padding: 16px 32px;
+}
+
+/*navegador*/
+.navegador {
+  background-color: #d4af37;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  font-size: 22px;
+}
+
+/*Pie de página con Logo y Datos de Contacto*/
+
+.piepagina {
+  background-color: #000000;
+  color: #d4af37;
+  position: absolute;
+  padding: 20px 100px 40px 20px;
+  width: 100%;
 }

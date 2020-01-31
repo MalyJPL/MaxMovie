@@ -9,69 +9,75 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <title>Cartelera</title>
   <link rel="stylesheet" href="css/cartelera.css">
-
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:  #d4af37;">
-    <a class="navbar-brand" href="#"><img width="300px" src="img/logo mAX.png" alt=""></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+ 
+ 
+ <!-- INICIA NAVEGADOR -->
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item  acive dropdown">
-          <a class="nav-link dropdown-toggle" href="estrenos.html" id="navbarDropdown" role="button"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Próximos Estrenos
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="estrenos.html#infantilPag">Infantil</a>
-            <a class="dropdown-item" href="estrenos.html#accionPag">Acción</a>
-            <a class="dropdown-item" href="estrenos.html#terrorPag">Terror</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="cartelera.html">Cartelera</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="teatros.html">Teatros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="confiteria.html">Confitería</a>
-        </li>
-        <div class="nav-item">
-          <a class="nav-item nav-link" href="#" id="iniciar-Sesion" onclick=iniciarSesion()>Iniciar Sesión</a>
+ <nav class="navbar navbar-expand-lg navbar-light navegador">
+  <a class="navbar-brand" href="#"><img width="200px" src="img/logo mAX.png" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item  acive dropdown">
+        <a class="nav-link dropdown-toggle" href="estrenos.html" id="navbarDropdown" role="button"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Próximos Estrenos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="estrenos.html#infantilPag">Infantil</a>
+          <a class="dropdown-item" href="estrenos.html#accionPag">Acción</a>
+          <a class="dropdown-item" href="estrenos.html#terrorPag">Terror</a>
         </div>
-        <li class="nav-item">
-          <b class="nav-link" id="usuario"></b>
-        </li>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cartelera.html">Cartelera</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="teatros.html">Teatros</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="confiteria.html">Confitería</a>
+      </li>
+      <div class="nav-item">
+        <a class="nav-item nav-link" href="#" id="iniciar-Sesion" onclick=iniciarSesion()>Iniciar Sesión</a>
+      </div>
+      <li class="nav-item">
+        <b class="nav-link" id="usuario"></b>
+      </li>
 
-        <div class="nav-item">
-          <a class="nav-item nav-link" style="display:none" id="cerrarSesion" href="#" onclick=cerrarSesion()>Cerrar
-            Sesión</a>
-        </div>
-    </div>
-  </nav>
+      <div class="nav-item">
+        <a class="nav-item nav-link" style="display:none" id="cerrarSesion" href="#" onclick=cerrarSesion()>Cerrar
+          Sesión</a>
+      </div>
+  </div>
+</nav> <br>
 
+<!-- FINALIZA NAVEGADOR -->
+
+ 
   <div class="container">
     <br>
     <div class="row">
-      <div class="col-3">
+      <div class="col-3"><br><br>
         <h3>Dolittle</h3><br>
       </div>
-      <div class="col-3">
+      <div class="col-3"><br><br>
         <h3>Bad Boys 3</h3><br>
       </div>
-      <div class="col-3">
+      <div class="col-3"><br><br>
         <h3>Contra lo Imposible</h3><br>
       </div>
-      <div class="col-3">
+      <div class="col-3"><br><br>
         <h3>El Escandalo</h3><br>
       </div>
       <div class="col-3">
@@ -122,7 +128,7 @@
           </div>
         </div>
       </div>
-    </div><br><br><br><br>
+    </div><br><br>
     <div class="row">
       <div class="col-3">
         <h3 style="text-align: center;">Frozen</h3><br>
@@ -189,7 +195,43 @@
     </div>
   </div>
 
-  <footer></footer>
+  <br><br><br>
+
+  <!--Pie de página con Logo, Redes Sociales y Datos de Contacto-->
+  <footer class="piepagina">
+    <div class="row">
+      <div class="col">
+        <img src="img/logo mAX.png" alt="logomoviemax" width="500px">
+        <h2 style="color: #d4af37; font-family: 'Zhi Mang Xing', cursive;">¿Qué quieres ver hoy?</h2>
+      </div>
+      <div class="col-3" style="text-align: center;">
+        <br>
+        <h4><b> Síguenos: </b></h4>
+        <br>
+        <img id="doradofb" src="img/LogosRedesPNG/LogoFacebookDoradoPNG.png" alt="imagen" width="25px" height="25px">
+        <a href="https://www.facebook.com/" target="blank_">&nbsp Facebook</a>
+        <br><br><img id="doradoig" src="img/LogosRedesPNG/LogoInstagramDoradoPNG.png" alt="imagen" width="25px"
+          height="25px">
+        <a href="https://www.instagram.com/" target="blank_"> &nbsp Instagram</a>
+        <br><br><img id="doradotw" src="img/LogosRedesPNG/LogoTwitterDoradoPNG.png" alt="imagen" width="25px"
+          height="25px">
+        <a href="https://www.twitter.com/" target="blank_">&nbsp Twitter</a> &nbsp &nbsp &nbsp
+        <br><br><img id="doradoyt" src="img/LogosRedesPNG/LogoYoutubeDoradoPNG.png" alt="imagen" width="25px"
+          height="25px">
+        <a href="https://www.youtube.com/" target="blank_">&nbsp Youtube</a> &nbsp &nbsp
+        <br><br>
+      </div>
+      <div class="col-3">
+        <br>
+        <h4><b> Contactos: </b></h4>
+        <br> Línea nacional <br> 018000 930930 <br> <br>
+        <br> E-mail Institucional <br> contacto@moviemax.com <br> <br>
+        <br>
+      </div>
+    </div>
+
+
+  </footer>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
