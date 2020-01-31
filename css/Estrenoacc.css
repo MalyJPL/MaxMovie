@@ -7,14 +7,14 @@
     color: red;
 }
 
-body{
+.accion{
     background: black !important;
 }
 .carousel {
     display: block;
     margin: auto;
   }
-  body {
+.accion {
     background-color: black;
   }
   .carousel-inner {
