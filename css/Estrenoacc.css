@@ -1,25 +1,32 @@
-
-#uno, #dos, #tres{
-  margin: 5px auto;  
+#uno,
+#dos,
+#tres {
+  margin: 5px auto;
   display: block;
 }
-#boton{
-    color: red;
+#boton {
+  color: red;
 }
 
-.accion{
-    background: black !important;
+.accion {
+  background: black !important;
 }
 .carousel {
-    display: block;
-    margin: auto;
-  }
+  display: block;
+  margin: auto;
+}
 .accion {
-    background-color: black;
-  }
-  .carousel-inner {
-    background-color: #dac170;
-  }
-  
-  
+  background-color: black;
+}
+.carousel-inner {
+  background-color: #dac170;
+}
 
+.navegador {
+  background-color: #d4af37;
+}
+
+.menu {
+  color: rgb(10, 9, 9);
+  font-size: 30px;
+}

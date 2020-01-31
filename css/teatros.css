@@ -10,10 +10,9 @@ h4 {
   border: 2px groove #000000;
 }
 .imagenes {
-  margin: 10px;
   width: 100%;
   height: 300px;
-  border-radius: 5%;
+  border-radius: 50%;
 }
 .imagenes:hover {
   border: 5px groove #d4af37;
@@ -21,3 +20,76 @@ h4 {
 /* .borde {
   border: solid 1px black;
 } */
+
+/*Pie de página con Logo y Datos de Contacto*/
+
+.piepagina {
+  background-color: #000000;
+  color: #d4af37;
+  position: absolute;
+  padding: 20px 100px 40px 20px;
+  width: 100%;
+}
+/*
+.col-3 {
+  border: 5px groove #d4af37
+}
+.col {
+  border: 5px groove #d4af37
+}*/
+
+a {
+  color: #d4af37;
+}
+
+img {
+  color: #d4af37;
+}
+
+/*#doradofb {
+  background: url(../img/LogosRedesPNG/LogoFacebookDoradoPNG.png) no-repeat;
+  
+  }
+#doradofb:hover {
+background: url(../img/LogosRedesPNG/LogoFacebookColorPNG.png) no-repeat;
+
+}*/
+
+#doradofb {
+  width: 25px;
+  height: 25px;
+  border: 5px;
+}
+#doradofb:hover {
+  border: 5px solid whitesmoke;
+}
+
+#doradoig {
+  width: 25px;
+  height: 25px;
+  border: 5px;
+}
+#doradoig:hover {
+  border: 5px solid whitesmoke;
+  background-color: whitesmoke;
+}
+
+#doradotw {
+  width: 25px;
+  height: 25px;
+  border: 5px;
+}
+#doradotw:hover {
+  border: 5px solid whitesmoke;
+  background-color: whitesmoke;
+}
+
+#doradoyt {
+  width: 25px;
+  height: 25px;
+  border: 5px;
+}
+#doradoyt:hover {
+  border: 5px solid whitesmoke;
+  background-color: whitesmoke;
+}

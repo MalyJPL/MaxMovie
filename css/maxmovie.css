@@ -40,33 +40,47 @@ h4 {
   text-align: center;
   background-color: whitesmoke;
 }
-<<<<<<< HEAD:css/maxmovie.css
 
-h1:hover{
-  color: rgb(117, 89, 17) ;
-}
-
-.navegador{
-  background-color:  #d4af37;
-}
-
-.menu{
-  color:rgb(10, 9, 9);
-  font-size: 30px;
-}
-=======
 h1:hover {
   color: rgb(117, 89, 17);
 }
-<<<<<<< HEAD:css/maxmovie.css
->>>>>>> 42e1dd601527504a4324b3724578a002c4a0e15e:maxmovie.css
-=======
 
-#bodyEstreno{
-  background-color: black;
+.logos {
+  width: 50%;
+  height: 50%;
+  margin: auto;
 }
 
-.h2Estreno{
-  color: white;
+.logo_play {
+  width: 90%;
+  height: 70%;
+  margin: auto;
 }
->>>>>>> d75f14fcefa7b37a664cf22d8b3bf7ffd0d26e92:maxmovie.css
+
+.logo_app {
+  width: 85%;
+  height: 55%;
+  margin: auto;
+}
+
+footer {
+  background-color: grey;
+}
+
+.bt_negrilla {
+  font-weight: bold;
+}
+
+.modal_fondo {
+  background-color: hotpink;
+}
+
+.navegador {
+  background-color: #d4af37;
+}
+
+.menu {
+  color: rgb(10, 9, 9);
+  font-size: 30px;
+  padding: 10%;
+}

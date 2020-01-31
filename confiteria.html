@@ -12,7 +12,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:  #d4af37;">
-    <a class="navbar-brand" href="#"><img width="150px" src="img/logo mAX.png" alt=""></a>
+    <a class="navbar-brand" href="#"><img width="300px" src="img/logo mAX.png" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -23,7 +23,16 @@
         <li class="nav-item active">
           <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
         </li>
-        <a class="nav-link" href="estrenos.html">Próximos Estrenos</a>
+        <li class="nav-item  acive dropdown">
+          <a class="nav-link dropdown-toggle" href="estrenos.html" id="navbarDropdown" role="button"
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Próximos Estrenos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="estrenos.html#infantilPag">Infantil</a>
+            <a class="dropdown-item" href="estrenos.html#accionPag">Acción</a>
+            <a class="dropdown-item" href="estrenos.html#terrorPag">Terror</a>
+          </div>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="cartelera.html">Cartelera</a>
@@ -46,14 +55,76 @@
             Sesión</a>
         </div>
     </div>
-  </nav><br><br>
+  </nav>
+
+  <br>
   <h1 style="text-align: center; background-color: whitesmoke;">NUESTRA CONFITERÍA</h1> <br><br>
   <div class="container" style="margin: auto; display: block;">
+    <!--uno-->
     <div class="row">
       <div class="col-6" style="background-color: grey;display: block;">
-        <img  src="img/confiteria 2.jpg" alt="confiteria" width="100%" height="70%"><br><br>
-        <h5 style="color: black;">CINE ANTOJOS <br> <br>
-          Todos los combos cuentan con descuentos especiales para clientes</h5>
+        <!--imagen-->
+        <img src="img/confiteria 1.jpg" alt="confiteria" width="100%" height="70%"><br>
+        <h5 style="color: black;">CINE ANTOJOS <br>
+          8 PIEZAS DE ALITAS DE POLLO + PAPA A LA FRANCESA</h5>
+      </div>
+      <div class="col-3" style="background-color: white;">
+        <h6 style="background-color: #d4af37;"> BOGOTÁ D.C.</h6>
+        MaxMovie Centro Comercial Calima Segundo piso Local 410, MaxMovie Centro Comercial Titan Plaza Segundo piso
+        Local 304, MaxMovie Centro Comercial El Eden
+        Primer piso Local 102.
+        <h6 style="background-color: #d4af37;">MEDELLÍN</h6>
+        MaxMovie Centro Comercial Los Sauces Segundo piso Local 305, MaxMovie Centro Comercial El Rey Primer piso Local
+        127, MaxMovie Centro Comercial Santa Fe
+        Segundo piso Local 214.
+        <h6 style="background-color: grey;">Valor $20.900</p>
+      </div>
+      <div class="col-3" style="background-color: white;">
+        <h6 style="background-color: #d4af37;">DESCUENTOS CON TARJETA MAX</h6><br>
+        <!--boton-->
+
+        <button type="button" class="btn btn-outline-danger"
+          onclick="cambiarContenido('divConfiteria1', '10% de descuento');">DESCUENTOS</button><br><br>
+        <div id="divConfiteria1">---</div>
+      </div>
+    </div>
+    <br><br>
+    <!--dos-->
+    <div class="row">
+      <div class="col-3" style="background-color: white;">
+        <h6 style="background-color: #d4af37;"> BOGOTÁ D.C.</h6>
+        MaxMovie Centro Comercial Calima Segundo piso Local 410, MaxMovie Centro Comercial Titan Plaza Segundo piso
+        Local 304, MaxMovie Centro Comercial El Eden
+        Primer piso Local 102.
+        <h6 style="background-color: #d4af37;">MEDELLÍN</h6>
+        MaxMovie Centro Comercial Los Sauces Segundo piso Local 305, MaxMovie Centro Comercial El Rey Primer piso Local
+        127, MaxMovie Centro Comercial Santa Fe
+        Segundo piso Local 214.
+        <h6 style="background-color: grey;">Valor $17.900</p>
+      </div>
+      <div class="col-6" style="background-color: grey;display: block;">
+        <!--imagen-->
+        <img src="img/confiteria 2.jpg" alt="confiteria" width="100%" height="70%"><br>
+        <h5 style="color: black;">CINE ANTOJOS <br>
+          Disfruta de nuestros combos y agrandalos por solo $4.000</h5>
+      </div>
+      <div class="col-3" style="background-color: white;">
+        <h6 style="background-color: #d4af37;">DESCUENTOS CON TARJETA MAX</h6><br>
+        <!--boton-->
+
+        <button type="button" class="btn btn-outline-danger"
+          onclick="cambiarContenido('divConfiteria2', '15% de descuento');">DESCUENTOS</button><br><br>
+        <div id="divConfiteria2">---</div>
+      </div>
+    </div>
+    <br><br>
+    <!--tres-->
+    <div class="row">
+      <div class="col-6" style="background-color: grey;display: block;">
+        <!--imagen-->
+        <img src="img/confiteria 5.png" alt="confiteria" width="100%" height="70%"><br>
+        <h5 style="color: black;">APROVECHA <br>
+          Nuestras salas con movimiento D-BOX</h5>
       </div>
       <div class="col-3" style="background-color: white;">
         <h6 style="background-color: #d4af37;"> BOGOTÁ D.C.</h6>
@@ -67,82 +138,51 @@
         <h6 style="background-color: grey;">Valor $23.900</p>
       </div>
       <div class="col-3" style="background-color: white;">
-        <h6 style="background-color: #d4af37;">SOACHA</h6>
-        Procinal Unisur
-        <h6 style="background-color: grey;">Valor $14.600</h6>
+        <h6 style="background-color: #d4af37;">DESCUENTOS CON TARJETA MAX</h6><br>
+        <!--boton -->
 
-
-
-
-
+        <button type="button" class="btn btn-outline-danger"
+          onclick="cambiarContenido('divConfiteria3', '2x1 de lunes a viernes');">DESCUENTOS</button><br><br>
+        <div id="divConfiteria3">---</div>
       </div>
-
-
-
-
-
     </div>
+    <br><br>
+    <!--cuatro-->
+    <div class="row">
+      <div class="col-3" style="background-color: white;">
+        <h6 style="background-color: #d4af37;"> BOGOTÁ D.C.</h6>
+        MaxMovie Centro Comercial Calima Segundo piso Local 410, MaxMovie Centro Comercial Titan Plaza Segundo piso
+        Local 304, MaxMovie Centro Comercial El Eden
+        Primer piso Local 102.
+        <h6 style="background-color: #d4af37;">MEDELLÍN</h6>
+        MaxMovie Centro Comercial Los Sauces Segundo piso Local 305, MaxMovie Centro Comercial El Rey Primer piso Local
+        127, MaxMovie Centro Comercial Santa Fe
+        Segundo piso Local 214.
+        <h6 style="background-color: grey;">Valor $35.000</p>
+      </div>
+      <div class="col-6" style="background-color: grey;display: block;">
+        <!--imagen-->
+        <img src="img/confiteria 4.jpg" alt="confiteria" width="100%" height="70%"><br>
+        <h5 style="color: black;">CINE PREMIER <br>
+          Acceso a peliculas que no se proyectan en ninguna otra sala</h5>
+      </div>
+      <div class="col-3" style="background-color: white;">
+        <h6 style="background-color: #d4af37;">DESCUENTOS CON TARJETA MAX</h6><br>
+        <!--boton-->
+
+        <button type="button" class="btn btn-outline-danger"
+          onclick="cambiarContenido('divConfiteria4', 'acceso a premiers unicas con tarjeta gold');">DESCUENTOS</button><br><br>
+        <div id="divConfiteria4">---</div>
+      </div>
+    </div>
+
+
+
+
+
+
+
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

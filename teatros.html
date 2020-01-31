@@ -1,139 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/teatros.css">
-    <title>Teatros</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:  #d4af37;">
-        <a class="navbar-brand" href="#"><img width=250px" src="img/logo mAX.png" alt=""></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
-                </li>
-                <a class="nav-link" href="estrenos.html">Próximos Estrenos</a>
-              </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="cartelera.html">Cartelera</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="teatros.html">Teatros</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="confiteria.html">Confitería</a>
-              </li>
-                <div class="nav-item">
-                    <a class="nav-item nav-link" href="#" id="iniciar-Sesion" onclick=iniciarSesion()>Iniciar Sesión</a>
-                </div>
-                <li class="nav-item">
-                    <b class="nav-link" id="usuario"></b>
-                </li>
-                
-                <div class="nav-item">
-                    <a class="nav-item nav-link" style="display:none" id="cerrarSesion" href="#" onclick=cerrarSesion()>Cerrar Sesión</a>
-                </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/teatros.css">
+  <link href="https://fonts.googleapis.com/css?family=Lora|Uncial+Antiqua|Zhi+Mang+Xing&display=swap" rel="stylesheet">
+  <title>Teatros</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:  #d4af37;">
+    <a class="navbar-brand" href="#"><img width="150px" src="img/logo mAX.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+        </li>
+        <a class="nav-link" href="estrenos.html">Próximos Estrenos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cartelera.html">Cartelera</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="teatros.html">Teatros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="confiteria.html">Confitería</a>
+        </li>
+        <div class="nav-item">
+          <a class="nav-item nav-link" href="#" id="iniciar-Sesion" onclick=iniciarSesion()>Iniciar Sesión</a>
         </div>
-    </nav>
-<br>
+        <li class="nav-item">
+          <b class="nav-link" id="usuario"></b>
+        </li>
+
+        <div class="nav-item">
+          <a class="nav-item nav-link" style="display:none" id="cerrarSesion" href="#" onclick=cerrarSesion()>Cerrar
+            Sesión</a>
+        </div>
+    </div>
+  </nav>
+  <br>
 
 
-    <div class="container">
-      <h1>BOGOTÁ D.C.</h1>
-      <br>
-      <div class="row">
-        <div class="col"><img class="imagenes" src="img/cine1.jpg" alt=""></div>
-        <div class="col borde">
-          <h2>Centro Comercial Calima</h2>
-          <h4>Segundo piso Local 410</h4>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8654468494233!2d-74.08818128573583!3d4.618082596645178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f997aef41fa05%3A0xc30a0c9aa47dc931!2sCalima%20Centro%20Comercial%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1580236652475!5m2!1ses-419!2sco" width="500px" height="170px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        </div>
-      </div>
-      <br>
-      <div class="row">
-        <div class="col"><img class="imagenes" src="img/cine2.jpg" alt=""></div>
-        <div class="col borde">
-          <h2>Centro Comercial Titan Plaza</h2>
-          <h4>Segundo piso Local 410</h4>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.4322829563143!2d-74.08837668573547!3d4.694707996590011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b25144634c9%3A0xaa39a3ad6b78b4cb!2sCentro%20Comercial%20Tit%C3%A1n%20Plaza!5e0!3m2!1ses-419!2sco!4v1580236962815!5m2!1ses-419!2sco" width="500px" height="170px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        </div>
-      </div>
-      <br>
-      <div class="row"> 
-        <div class="col"><img class="imagenes" src="img/cine3.jpg" alt=""></div>
-        <div class="col borde">
-          <h2>Centro Comercial El Eden</h2>
-          <h4>Primer piso Local 102</h4>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7056401831164!2d-74.13087498573569!3d4.646498696624713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9c0b484fdb79%3A0x14aa4d9d70fb5f52!2sCentro%20Comercial%20El%20Ed%C3%A9n!5e0!3m2!1ses-419!2sco!4v1580237074537!5m2!1ses-419!2sco" width="500px" height="170px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        </div>
-      </div>
-      <br>
-      <h1>MEDELLIN</h1>
-      <br>
-      <div class="row">
-        <div class="col"><img class="imagenes" src="img/cine4.jpg" alt=""></div>
-        <div class="col borde">
-          <h2>Centro Comercial Los Sauces</h2>
-          <h4>Segundo piso Local 305</h4>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7932.115679340011!2d-75.57797837125598!3d6.256111000000938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429046893535b%3A0xf6825307c9842f23!2sCentro%20Comercial%20Los%20Sauces!5e0!3m2!1ses-419!2sco!4v1580237188345!5m2!1ses-419!2sco" width="500px" height="170px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        </div>
-      </div>
-      <br>
-      <div class="row">
-        <div class="col"><img class="imagenes" src="img/cine5.jpg" alt=""></div>
-        <div class="col borde">
-          <h2>Centro Comercial El Rey</h2>
-          <h4>Primer piso Local 127</h4>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.50020596406!2d-75.5610237857276!3d6.197542695513389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e46829a65a5d1ab%3A0xacb563511f221ff3!2sEl%20Tesoro%20Parque%20Comercial!5e0!3m2!1ses-419!2sco!4v1580237511038!5m2!1ses-419!2sco" width="500px" height="170px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        </div>
-      </div>
-      <br>
-      <div class="row">
-        <div class="col"><img class="imagenes" style="height: 300px;" src="img/cine6.jpg" alt=""></div>
-        <div class="col borde">
-          <h2>Centro Comercial Santa Fe</h2>
-          <h4>Segundo piso Local 214</h4>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4991640108196!2d-75.57656288572754!3d6.197681295513324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4683c35b5ba5bf%3A0xac98ea110135672!2sCentro%20comercial%20Santa%20fe!5e0!3m2!1ses-419!2sco!4v1580237412417!5m2!1ses-419!2sco" width="500px" height="170px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        </div>
+  <div class="container">
+    <h1>BOGOTÁ D.C.</h1>
+    <br>
+    <div class="row">
+      <div class="col"><img class="imagenes" src="img/cine1.jpg" alt=""></div>
+      <div class="col borde">
+        <h2>Centro Comercial Calima</h2>
+        <h4>Segundo piso Local 210</h4>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8654468494233!2d-74.08818128573583!3d4.618082596645178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f997aef41fa05%3A0xc30a0c9aa47dc931!2sCalima%20Centro%20Comercial%20Bogot%C3%A1!5e0!3m2!1ses-419!2sco!4v1580236652475!5m2!1ses-419!2sco"
+          width="500px" height="170px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       </div>
     </div>
+    <br>
+    <div class="row">
+      <div class="col"><img class="imagenes" src="img/cine2.jpg" alt=""></div>
+      <div class="col borde">
+        <h2>Centro Comercial Titan Plaza</h2>
+        <h4>Tercer piso Local 304</h4>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.4322829563143!2d-74.08837668573547!3d4.694707996590011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9b25144634c9%3A0xaa39a3ad6b78b4cb!2sCentro%20Comercial%20Tit%C3%A1n%20Plaza!5e0!3m2!1ses-419!2sco!4v1580236962815!5m2!1ses-419!2sco"
+          width="500px" height="170px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col"><img class="imagenes" src="img/cine3.jpg" alt=""></div>
+      <div class="col borde">
+        <h2>Centro Comercial El Eden</h2>
+        <h4>Primer piso Local 102</h4>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.7056401831164!2d-74.13087498573569!3d4.646498696624713!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9c0b484fdb79%3A0x14aa4d9d70fb5f52!2sCentro%20Comercial%20El%20Ed%C3%A9n!5e0!3m2!1ses-419!2sco!4v1580237074537!5m2!1ses-419!2sco"
+          width="500px" height="170px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+    </div>
+    <br>
+    <h1>MEDELLIN</h1>
+    <br>
+    <div class="row">
+      <div class="col"><img class="imagenes" src="img/cine4.jpg" alt=""></div>
+      <div class="col borde">
+        <h2>Centro Comercial Los Sauces</h2>
+        <h4>Tercer piso Local 305</h4>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7932.115679340011!2d-75.57797837125598!3d6.256111000000938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429046893535b%3A0xf6825307c9842f23!2sCentro%20Comercial%20Los%20Sauces!5e0!3m2!1ses-419!2sco!4v1580237188345!5m2!1ses-419!2sco"
+          width="500px" height="170px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col"><img class="imagenes" src="img/cine5.jpg" alt=""></div>
+      <div class="col borde">
+        <h2>Centro Comercial El Rey</h2>
+        <h4>Primer piso Local 127</h4>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.50020596406!2d-75.5610237857276!3d6.197542695513389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e46829a65a5d1ab%3A0xacb563511f221ff3!2sEl%20Tesoro%20Parque%20Comercial!5e0!3m2!1ses-419!2sco!4v1580237511038!5m2!1ses-419!2sco"
+          width="500px" height="170px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col"><img class="imagenes" style="height: 300px;" src="img/cine6.jpg" alt=""></div>
+      <div class="col borde">
+        <h2>Centro Comercial Santa Fe</h2>
+        <h4>Segundo piso Local 214</h4>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.4991640108196!2d-75.57656288572754!3d6.197681295513324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4683c35b5ba5bf%3A0xac98ea110135672!2sCentro%20comercial%20Santa%20fe!5e0!3m2!1ses-419!2sco!4v1580237412417!5m2!1ses-419!2sco"
+          width="500px" height="170px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <!--Pie de página con Logo, Redes Sociales y Datos de Contacto-->
+  <footer class="piepagina">
+    <div class="row">
+      <div class="col">
+        <img src="img/logo mAX.png" alt="logomoviemax" width="500px">
+        <h2 style="color: #d4af37; font-family: 'Zhi Mang Xing', cursive;">¿Qué quieres ver hoy?</h2>
+      </div>
+      <div class="col-3" style="text-align: center;">
+        <br>
+        <h4><b> Síguenos: </b></h4>
+        <br>
+        <img id="doradofb" src="img/LogosRedesPNG/LogoFacebookDoradoPNG.png" alt="imagen" width="25px" height="25px">
+        <a href="https://www.facebook.com/" target="blank_">&nbsp Facebook</a>
+        <br><br><img id="doradoig" src="img/LogosRedesPNG/LogoInstagramDoradoPNG.png" alt="imagen" width="25px"
+          height="25px">
+        <a href="https://www.instagram.com/" target="blank_"> &nbsp Instagram</a>
+        <br><br><img id="doradotw" src="img/LogosRedesPNG/LogoTwitterDoradoPNG.png" alt="imagen" width="25px"
+          height="25px">
+        <a href="https://www.twitter.com/" target="blank_">&nbsp Twitter</a> &nbsp &nbsp &nbsp
+        <br><br><img id="doradoyt" src="img/LogosRedesPNG/LogoYoutubeDoradoPNG.png" alt="imagen" width="25px"
+          height="25px">
+        <a href="https://www.youtube.com/" target="blank_">&nbsp Youtube</a> &nbsp &nbsp
+        <br><br>
+      </div>
+      <div class="col-3">
+        <br>
+        <h4><b> Contactos: </b></h4>
+        <br> Línea nacional <br> 018000 930930 <br> <br>
+        <br> E-mail Institucional <br> contacto@moviemax.com <br> <br>
+        <br>
+      </div>
+    </div>
+  </footer>
 
 
-    <footer>
-      
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
 
-    </footer>
-
-
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
