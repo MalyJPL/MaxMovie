@@ -9,30 +9,33 @@ function iniciarSesion() {
         .then((value) => {
             swal("¡Bienvenido/a!", value, "success");
             document.getElementById('usuario').innerHTML = value;
-            document.getElementById('cerrarSesion').style.display='block'
+            document.getElementById('cerrarSesion').style.display = 'block'
 
-            localStorage.setItem('nombreUsuario',value)
-            
-            document.getElementById('usuario').style.display='block'
-            document.getElementById('iniciar-Sesion').style.display='none'
+            localStorage.setItem('nombreUsuario', value)
+
+            document.getElementById('usuario').style.display = 'block'
+            document.getElementById('iniciar-Sesion').style.display = 'none'
         });
 }
 
 var usuario = localStorage.getItem('nombreUsuario')
 
-if (usuario != null){
-    document.getElementById("usuario").innerHTML=usuario;
-    document.getElementById("cerrarSesion").style.display='block';
+if (usuario != null) {
+    document.getElementById("usuario").innerHTML = usuario;
+    document.getElementById("cerrarSesion").style.display = 'block';
+    document.getElementById("iniciar-Sesion").style.display = 'none';
     console.log("si existe el usuario")
-}else{
+} else {
     console.log("no existe el usuario")
 }
 
-function cerrarSesion(){
+function cerrarSesion() {
+
+    swal("Regrese Pronto!", localStorage.getItem('nombreUsuario'), "warning");
     localStorage.removeItem('nombreUsuario')
-    document.getElementById("cerrarSesion").style.display='none';
-    document.getElementById('usuario').innerHTML =""
-    document.getElementById("iniciar-Sesion").style.display='block';
+    document.getElementById("cerrarSesion").style.display = 'none';
+    document.getElementById('usuario').innerHTML = ""
+    document.getElementById("iniciar-Sesion").style.display = 'block';
 }
 
 //FUNCIONES DE CARTELERA.HTML
