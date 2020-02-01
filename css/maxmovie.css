@@ -83,3 +83,13 @@ footer {
   font-size: 22px;
 }
 
+
+/*Pie de página con Logo y Datos de Contacto*/
+
+.piepagina {
+  background-color: #000000;
+  color: #d4af37;
+  position: absolute;
+  padding: 20px 100px 40px 20px;
+  width: 100%;
+}
