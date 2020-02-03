@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 
-
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-  <link rel="stylesheet" href="../MaxMovie/">
-  <link rel="stylesheet" href="css/maxmovie.css">
+  <link rel="stylesheet" href="Estrenoacc.css">
   <title>Estrenos</title>
 </head>
 
 <body id="bodyEstreno">
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:  #d4af37;">
-    <a class="navbar-brand" href="#"><img width="300px" src="img/logo mAX negro.png" alt=""></a>
+    <a class="navbar-brand" href="#"><img width=250px src="img/logo mAX.png" alt=""></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -24,45 +21,55 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+          <a class="nav-link  texto-menu " href="index.html">Inicio <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item  acive dropdown">
+
+
+        <li class="nav-item  acive dropdown  texto-menu">
           <a class="nav-link dropdown-toggle" href="estrenos.html" id="navbarDropdown" role="button"
             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Próximos Estrenos
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="estrenos.html#infantilPag">Infantil</a>
-            <a class="dropdown-item" href="estrenos.html#accionPag">Acción</a>
-            <a class="dropdown-item" href="estrenos.html#terrorPag">Terror</a>
+            <a class="dropdown-item" href="estreInfantil.html">Infantil</a>
+            <a class="dropdown-item" href="Moviemax2.html">Acción</a>
+            <a class="dropdown-item" href="terror/categoriaterror.html">Terror</a>
           </div>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link" href="cartelera.html">Cartelera</a>
+          <a class="nav-link  texto-menu" href="cartelera.html">Cartelera</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="teatros.html">Teatros</a>
+          <a class="nav-link  texto-menu" href="teatros.html">Teatros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="confiteria.html">Confitería</a>
-        </li>
-        <div class="nav-item">
-          <a class="nav-item nav-link" href="#" id="iniciar-Sesion" onclick=iniciarSesion()>Iniciar Sesión</a>
-        </div>
-        <li class="nav-item">
-          <b class="nav-link" id="usuario"></b>
+          <a class="nav-link  texto-menu" href="confiteria.html">Confitería</a>
         </li>
 
+      </ul>
+
+      <span class="navbar-text">
         <div class="nav-item">
           <a class="nav-item nav-link" style="display:none" id="cerrarSesion" href="#" onclick=cerrarSesion()>Cerrar
             Sesión</a>
         </div>
+        <div class="nav-item">
+          <a class="nav-item nav-link  texto-menu " href="#" id="iniciar-Sesion" onclick=iniciarSesion()>Iniciar
+            Sesión</a>
+        </div>
+        <div class="nav-item">
+          <b class="nav-link  texto-menu" id="usuario"></b>
+        </div>
+      </span>
+
+
     </div>
-  </nav>
 
-  <br><br><br>
+  </nav> <br>
 
-
+  <h1 class="display-3"> <strong>Proximos Estrenos</strong> </h1>
+  <br><br>
   <!---  PRIMER CARRUSEL --->
 
   <div>
@@ -72,11 +79,11 @@
         <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
       </ol>
-
+      <h2 id="infantilPag" class="h2Estreno">Categoría Infantil</h2> <br>
       <div class="carousel-inner" style="height: 400px;">
 
         <div class="carousel-item active ">
-          <h2 id="infantilPag" class="h2Estreno">Categoría Infantil</h2> <br>
+
           <div class="row">
             <div class="col col-sm-3"><img width="110%" height="80%" src="img/asterix13nov2019_0.png" class="d-block"
                 alt="..." /></div>
@@ -89,7 +96,7 @@
           </div>
         </div>
         <div class="carousel-item">
-          <h2 class="h2Estreno">Categoría Infantil</h2> <br>
+
           <div class="row">
             <div class="col-sm-3"><img width="110%" height="80%" src="img/estreoif.jpg" class="d-block" alt="..." />
             </div>
@@ -116,8 +123,8 @@
   </div>
   <br>
   <div style="padding-right: 30px;">
-    <button style="float: right; background-color: #d4af37; color: white;" type="button"
-      class="btn btn-warning btn-sm">Ver mas... <a href=#></a></button>
+    <a href="estreInfantil.html"><button style="float: right; background-color: #d4af37; color: white;" type="button"
+        class="btn btn-warning btn-sm">Ver mas...</button></a>
   </div>
   <br>
   <br>
@@ -131,9 +138,10 @@
         <li data-target="#carousel2ExampleCaptions" data-slide-to="1"></li>
       </ol>
 
+      <h2 id="accionPag" class="h2Estreno">Categoría Acción</h2> <br>
       <div class="carousel-inner" style="height: 400px;">
         <div class="carousel-item active ">
-          <h2 id="accionPag" class="h2Estreno">Categoría Acción</h2> <br>
+
           <div class="row">
             <div class="col"><img width="110%" height="80%" src="img/195719nov2019.jpg" class="d-block" alt="..." />
             </div>
@@ -145,13 +153,12 @@
           </div>
         </div>
         <div class="carousel-item">
-          <h2 class="h2Estreno">Categoría Acción</h2id="accionPag"> <br>
-            <div class="row">
-              <div class="col"><img width="110%" height="80%" src="img/6.jpg" class="d-block" alt="..." /></div>
-              <div class="col"><img width="110%" height="80%" src="img/7}.jpg" class="d-block " alt="..." /></div>
-              <div class="col"><img width="110%" height="80%" src="img/8.jpg" class="d-block " alt="..." /></div>
-              <div class="col"><img width="110%" height="80%" src="img/9.jpg" class="d-block " alt="..." /></div>
-            </div>
+          <div class="row">
+            <div class="col"><img width="110%" height="80%" src="img/6.jpg" class="d-block" alt="..." /></div>
+            <div class="col"><img width="110%" height="80%" src="img/7}.jpg" class="d-block " alt="..." /></div>
+            <div class="col"><img width="110%" height="80%" src="img/8.jpg" class="d-block " alt="..." /></div>
+            <div class="col"><img width="110%" height="80%" src="img/9.jpg" class="d-block " alt="..." /></div>
+          </div>
         </div>
 
       </div>
@@ -183,9 +190,9 @@
         <li data-target="#carousel3ExampleCaptions" data-slide-to="0" class="active"></li>
         <li data-target="#carousel3ExampleCaptions" data-slide-to="1"></li>
       </ol>
+      <h2 class="h2Estreno">Categoría Terror</h2> <br>
       <div class="carousel-inner" style="height: 400px;">
         <div class="carousel-item active">
-          <h2 id="terrorPag" class="h2Estreno">Categoría Terror</h2> <br>
           <div class="row">
             <div class="col"><img width="110%" height="80%" src="img/terror1.jpg" class="d-block" alt="..." /></div>
             <div class="col"><img width="110%" height="80%" src="img/terror2.jpg" class="d-block " alt="..." /></div>
@@ -195,7 +202,7 @@
         </div>
 
         <div class="carousel-item">
-          <h2 class="h2Estreno">Categoría Terror</h2> <br>
+
           <div class="row">
             <div class="col"><img width="110%" height="80%" src="img/terror5.jpg" class="d-block" alt="..." /></div>
             <div class="col"><img width="110%" height="80%" src="img/terror6.jpg" class="d-block " alt="..." /></div>
@@ -217,14 +224,13 @@
   </div>
   <br>
   <div style="padding-right: 30px;">
-    <button style="float: right; background-color: #d4af37; color: white;" type="button"
-      class="btn btn-warning btn-sm">Ver mas... <a href="categoriaTerror.html"></a></button>
+    <a href="terror/categoriaterror.html"> <button style="float: right; background-color: #d4af37; color: white;"
+        type="button" class="btn btn-warning btn-sm">Ver mas... </button></a>
   </div>
   <br>
   <br>
 
 
-  <footer></footer>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -235,7 +241,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
-  <script src="js/JavaScript.js"></script>
+  <script src="JavaScript.js"></script>
+
 </body>
 <footer lang="en">
 </footer>
